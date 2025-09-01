@@ -1,185 +1,129 @@
-/* ===== Global Reset ===== */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+/* ===== Old-School Prof. Dr. Style ===== */
 
-/* ===== Typography ===== */
 body {
-    font-family: "Merriweather", Georgia, serif;
-    line-height: 1.7;
-    color: #222;
-    background: #fdfdfc;
-    padding-top: 70px;
+    font-family: "Times New Roman", Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #111;
+    background-color: #fdfdfd;
+    margin: 20px 40px;
+    text-align: left; /* Keep everything left-aligned */
 }
 
-/* ===== Navigation Bar ===== */
+/* ===== Navigation ===== */
 nav {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background: #2c2c34;
-    color: #fff;
-    padding: 15px 40px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-    z-index: 1000;
+    border-bottom: 2px solid #444;
+    padding-bottom: 6px;
+    margin-bottom: 25px;
 }
 
 nav h1 {
-    font-size: 1.8rem;
-    font-weight: 700;
-    letter-spacing: 1px;
-    font-family: "Playfair Display", Georgia, serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.nav-links {
+    margin-top: 5px;
 }
 
 .nav-links a {
-    margin-left: 25px;
+    margin-right: 15px;
     text-decoration: none;
-    font-size: 1rem;
-    color: #e6e6e6;
-    transition: color 0.3s ease;
+    color: #003366;
+    font-weight: bold;
 }
 
 .nav-links a:hover {
-    color: #c4b583;
+    text-decoration: underline;
 }
 
-.linkedin-icon {
-    font-size: 1.2rem;
-}
-
-/* ===== Sections ===== */
-section {
-    max-width: 900px;
-    margin: 60px auto;
-    padding: 0 20px;
-}
-
+/* ===== Headings ===== */
 h2 {
-    font-size: 1.6rem;
-    margin-bottom: 15px;
-    font-family: "Playfair Display", Georgia, serif;
-    color: #2c2c34;
-    border-bottom: 2px solid #c4b583;
-    display: inline-block;
-    padding-bottom: 5px;
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #888;
+    padding-bottom: 2px;
 }
 
 h3 {
-    font-size: 1.2rem;
-    margin: 20px 0 10px;
-    font-family: "Playfair Display", Georgia, serif;
-    color: #444;
+    font-size: 18px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+    font-style: italic;
 }
 
+/* ===== Paragraphs & Lists ===== */
 p {
-    margin-bottom: 15px;
-    text-align: justify;
+    margin-bottom: 12px;
+    max-width: 750px; /* Keep lines at readable length */
 }
 
 ul {
+    margin-left: 25px;
+    margin-bottom: 15px;
     list-style-type: square;
-    margin-left: 20px;
-    margin-bottom: 20px;
 }
 
-/* ===== Projects Grid ===== */
+/* ===== Projects Section ===== */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    margin-top: 20px;
+    display: block; /* No fancy grids */
 }
 
 .project-card {
+    border: 1px solid #aaa;
+    padding: 12px;
+    margin-bottom: 15px;
+    max-width: 750px;
     background: #fff;
-    border: 1px solid #ddd;
-    border-radius: 12px;
-    padding: 20px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
-}
-
-.project-card h3 {
-    color: #2c2c34;
-    margin-bottom: 10px;
 }
 
 .tech-stack span {
-    background: #f2f2f2;
-    border-radius: 6px;
-    padding: 4px 8px;
-    font-size: 0.85rem;
-    margin-right: 8px;
     display: inline-block;
-}
-
-.github-link {
-    display: inline-block;
-    margin-top: 10px;
-    font-size: 1.3rem;
-    color: #2c2c34;
-    transition: color 0.3s ease;
-}
-
-.github-link:hover {
-    color: #c4b583;
+    margin-right: 10px;
+    font-size: 0.9em;
+    color: #333;
 }
 
 /* ===== Contact Form ===== */
 footer {
-    background: #2c2c34;
-    color: #eee;
-    padding: 40px 20px;
-    text-align: center;
-    margin-top: 80px;
+    border-top: 2px solid #444;
+    margin-top: 40px;
+    padding-top: 15px;
+    font-size: 0.9em;
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto 25px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+    display: block;
+    max-width: 500px;
 }
 
 form input,
 form textarea,
 form button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
     font-family: inherit;
-    font-size: 1rem;
-    padding: 12px 14px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-}
-
-form textarea {
-    resize: none;
+    font-size: 1em;
+    border: 1px solid #aaa;
+    background: #f9f9f9;
 }
 
 form button {
-    background: #c4b583;
-    color: #2c2c34;
-    border: none;
+    width: auto;
+    background: #003366;
+    color: #fff;
     font-weight: bold;
     cursor: pointer;
-    transition: background 0.3s ease;
 }
 
 form button:hover {
-    background: #b3a56d;
+    background: #002244;
 }
 
 .footer-text {
-    font-size: 0.9rem;
-    color: #bbb;
     margin-top: 10px;
+    color: #666;
 }
