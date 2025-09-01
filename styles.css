@@ -1,0 +1,185 @@
+/* ===== Global Reset ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ===== Typography ===== */
+body {
+    font-family: "Merriweather", Georgia, serif;
+    line-height: 1.7;
+    color: #222;
+    background: #fdfdfc;
+    padding-top: 70px;
+}
+
+/* ===== Navigation Bar ===== */
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #2c2c34;
+    color: #fff;
+    padding: 15px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    z-index: 1000;
+}
+
+nav h1 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-family: "Playfair Display", Georgia, serif;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    font-size: 1rem;
+    color: #e6e6e6;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #c4b583;
+}
+
+.linkedin-icon {
+    font-size: 1.2rem;
+}
+
+/* ===== Sections ===== */
+section {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 0 20px;
+}
+
+h2 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+    font-family: "Playfair Display", Georgia, serif;
+    color: #2c2c34;
+    border-bottom: 2px solid #c4b583;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+h3 {
+    font-size: 1.2rem;
+    margin: 20px 0 10px;
+    font-family: "Playfair Display", Georgia, serif;
+    color: #444;
+}
+
+p {
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+ul {
+    list-style-type: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* ===== Projects Grid ===== */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.project-card {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.1);
+}
+
+.project-card h3 {
+    color: #2c2c34;
+    margin-bottom: 10px;
+}
+
+.tech-stack span {
+    background: #f2f2f2;
+    border-radius: 6px;
+    padding: 4px 8px;
+    font-size: 0.85rem;
+    margin-right: 8px;
+    display: inline-block;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 1.3rem;
+    color: #2c2c34;
+    transition: color 0.3s ease;
+}
+
+.github-link:hover {
+    color: #c4b583;
+}
+
+/* ===== Contact Form ===== */
+footer {
+    background: #2c2c34;
+    color: #eee;
+    padding: 40px 20px;
+    text-align: center;
+    margin-top: 80px;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form input,
+form textarea,
+form button {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+form textarea {
+    resize: none;
+}
+
+form button {
+    background: #c4b583;
+    color: #2c2c34;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+form button:hover {
+    background: #b3a56d;
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    color: #bbb;
+    margin-top: 10px;
+}
